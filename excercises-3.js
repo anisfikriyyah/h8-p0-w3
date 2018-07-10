@@ -6,12 +6,12 @@ var input = [
 ]
 
 function dataHandling(input) {
-    for (let i = 0; i < input.length; i++) {
-        console.log("Nomor ID: " + input[i][0])
-        console.log("Nama Lengkap: " + input[i][1])
-        console.log("TTL: " + input[i][2] + " " + input[i][3])
-        console.log("Hobi: " + input[i][4])
-        console.log(" ")
+    for ( i = 0; i < input.length; i++) {
+        console.log('Nomor ID: ' + input[i][0])
+        console.log('Nama Lengkap: ' + input[i][1])
+        console.log('TTL: ' + input[i][2] + '' + input[i][3])
+        console.log('Hobi: ' + input[i][4])
+        console.log(' ')
     }
 }
 dataHandling(input);
