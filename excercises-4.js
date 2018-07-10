@@ -9,46 +9,46 @@ var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca
    input[4]= "21/05/1989"
    var split = input[4].split("/")
    //console.log(split)
-   var bulan = "";
+   var bulan = ""
    switch(Number(split[1])) {
     case 01 :
-      bulan = "Januari";
+      bulan = "Januari"
     break;
     case 02 :
-      bulan = "Februari";
+      bulan = "Februari"
     break;
     case 03 :
-      bulan = "Maret";
+      bulan = "Maret"
     break;
     case 04 :
-      bulan = "April";
+      bulan = "April"
     break;
     case 05 :
-      bulan = "Mei";
+      bulan = "Mei"
     break;
     case 06 :
-      bulan = "Juni";
+      bulan = "Juni"
     break;
     case 07 :
-      bulan = "Juli";
+      bulan = "Juli"
     break;
     case 08 :
-      bulan = "Agustus";
+      bulan = "Agustus"
     break;
     case 09 :
-      bulan = "September";
+      bulan = "September"
     break;
     case 10 :
-      bulan = "Oktober";
+      bulan = "Oktober"
     break;
     case 11 :
-      bulan = "November";
+      bulan = "November"
     break;
     case 12 :
-      bulan = "Desember";
+      bulan = "Desember"
     break;
     default :
-      bulan = "Maaf Format Anda Salah";
+      bulan = "Maaf Format Anda Salah"
     break;
   }
   console.log(bulan)
@@ -56,8 +56,8 @@ var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca
   var Descending = split.sort(function(x,y) {return y-x})
  console.log(Descending)
 
- var date = input[4].split('/');
- console.log(date.join('-'));
+ var date = input[4].split('/')
+ console.log(date.join('-'))
   
  var name = input[1].slice(0,14)
  console.log(name)
