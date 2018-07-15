@@ -1,27 +1,28 @@
 function groupAnimals(animals) {
   // you can only write your code here!
   
-  animals.sort()
-  var animalsVarians = [[]]
-  animalsVarians[0].push(animals[0])
 
-  var indexOfAnimals = 0
-  for(var i=1;i<animals.length;i++){
-      if (animals[i][0]=== animalsVarians[indexOfAnimals][0][0]){
-          animalsVarians[indexOfAnimals].push(animals[i])
-      } else {
-          indexOfAnimals = indexOfAnimals + 1
-          animalsVarians[indexOfAnimals]= [animals[i]]
+  var kamus = "abcdefghijklmnopqrstuvwxyz"
+  var AnimalsVarians=[]
+  for(var i=0;i<kamus.length;i++){
+    // console.log(kamus[i])
+    var temp = []
+    for (var j=0; j < animals.length; j++) {
+      if(kamus[i] === animals[j][0]){
+        temp.push(animals[j])
       }
+    }
+    if (temp.length !== 0) {
+      AnimalsVarians.push(temp)
+    }
+    //   result = result + kamus[i]
   }
-  animalsVarians[0].sort()
-  animalsVarians[0].reverse()
-  
-  return animalsVarians
+  return result
+
 }
 
 // TEST CASES
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
-// [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
-console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
-// [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda'], ['unta'] ]
+// // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
+// console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
+// [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda','kancil'], ['unta'] ]
